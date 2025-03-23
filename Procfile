@@ -1,1 +1,1 @@
-web: python app1.py
+web: waitress-serve --call 'app1:app'
