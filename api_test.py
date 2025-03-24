@@ -6,7 +6,7 @@ def test_register_user():
     url = f"{BASE_URL}/register"
     payload = {"email": "testuser@example.com", "password": "password123"}
     response = requests.post(url, json=payload)
-    assert response.status_code in [201, 400]  # 400 if user already exists
+    assert response.status_code in [201, 400]  
 
 def test_register_missing_email():
     url = f"{BASE_URL}/register"
